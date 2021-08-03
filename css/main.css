@@ -2,6 +2,7 @@
 body{
   height: 3000px;
   margin: 0;
+  font-family: 'Bubblegum Sans', cursive;
 }
 a {
   text-decoration: none;
@@ -17,6 +18,34 @@ a {
 ul{
   list-style:none;
   }
+
+.btn{
+  width: 130px;
+  padding: 10px;
+  border: 3px solid grey;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  /* 자식요소에도 이어간다고 함. ??? */
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  /* border를 기준으로 뭐 한다는 데 뭔소리여 ??? */
+  display: block;
+  /* 혹시 모르는 크기를 부여하지 않으면 나오지 않는 애들을 생각하고, block하면 된다. */
+  transition: .4s;
+  /* 얘는 여기에 왜 넣었을까??? */
+}
+.btn a{
+  color: #333;
+}
+.btn:hover{
+  background-color: grey;
+}
+.btn:hover a{
+  color: #fff;
+}
 
 /* HEADER */
 header{
@@ -57,7 +86,6 @@ header .menu .item{
 }
 header .menu .item a{
   padding: 10px 20px;
-  font-family: 'Bubblegum Sans', cursive;
   font-weight: 450;
   font-size: 30px;
 }
@@ -78,20 +106,55 @@ header .menu .item a{
   background-color: rgba(146, 145, 145, 0.7);
 }
 .welcome .welcome_area{
-  flex-grow: 1;
 }
 .welcome .welcome_area .text_group{
   text-align: center;
   color: white;
 }
 .welcome .welcome_area .text_group h1{
-  font-family: 'Bubblegum Sans', cursive;
   font-weight: 450;
   font-size: 70px;
   margin: 0;
 }
 .welcome .welcome_area .text_group p{
-  font-family: 'Bubblegum Sans', cursive;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 450;
+  font-family: 'Gaegu', cursive;
+}
+
+/* INTRODUCE */
+.introduce{
+  background-image: url('../images/introduce_bg3.jpg');
+  background-position: center;
+}
+.introduce .inner{
+  display: flex;
+  height: 500px;
+}
+.introduce .inner .text_group{
+  width: 450px;
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  text-align: center;
+}
+.introduce .inner .text_group h1{
+  font-family: 'Gaegu', cursive;
+  font-size: 50px;
+  font-weight: 600;
+}
+.introduce .inner .text_group p{
+  font-family: 'Gaegu', cursive;
+  font-size: 25px;
+  font-weight: 450;
+}
+.introduce .inner .text_group .btn{
+  margin: auto;
+}
+.introduce .inner img{
+  width:434px;
+  height: 364px;
+  position: absolute;
+  right: 40px;
+  bottom: 10px;
 }
