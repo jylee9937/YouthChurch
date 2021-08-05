@@ -40,11 +40,20 @@ ul{
 .btn a{
   color: #333;
 }
+.btn.btn--reverse{
+  color: rgb(187, 187, 187);
+}
+.btn.btn--reverse a{
+  color: rgb(187, 187, 187);
+}
 .btn:hover{
   background-color: grey;
 }
 .btn:hover a{
   color: #fff;
+}
+.btn.btn--reverse:hover a{
+  color: #000;
 }
 
 /* HEADER */
@@ -208,4 +217,51 @@ header .menu .item a{
   font-size: 20px;
   font-family: 'Stylish', sans-serif;
   line-height: 30px;
+}
+
+/* COLLECTION */
+.collection{
+  background-image: url("../images/Collected_bg7.png");
+  background-color: rgb(3, 3, 46);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1000px 666px;
+}
+/* 얘를 없애면 배경이미지랑 컬러가 다 사라져버리네..? */
+.collection .inner{
+  height: 500px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collection .inner .text_group{
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  color: rgb(187, 187, 187);
+}
+.collection .inner h2{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 40px 0;
+}
+.collection .inner h3{
+  font-family: 'Gaegu', cursive;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 0 40px 0;
+}
+.collection .inner p{
+  font-size: 20px;
+  font-family: 'Stylish', sans-serif;
+  line-height: 30px;
+  /* 얘는 왜 마진이 안생기지? */
+}
+.collection .inner .btn{
+  margin: auto;
+  width: 200px;
 }
