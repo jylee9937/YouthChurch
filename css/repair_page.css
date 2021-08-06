@@ -1,0 +1,19 @@
+/* REPAIR */
+.repair{
+  margin-top: 90px;
+  background-image: url("../images/introduce_bg3.jpg");
+}
+.repair .inner{
+  height: 800px;
+  text-align: center;
+}
+.repair .inner .fas{
+  margin: 100px;
+  color: rgb(212, 36, 36);
+  font-size: 300px;
+}
+.repair .inner .repair_words{
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Gaegu', cursive;
+}
