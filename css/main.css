@@ -1,6 +1,5 @@
 /* COMMON */
 body{
-  height: 3000px;
   margin: 0;
   font-family: 'Bubblegum Sans', cursive;
 }
@@ -77,6 +76,10 @@ header .inner .logo{
   left: 0;
   margin: auto;
   /* 이러면 뭐가 되는거냐? */
+}
+header .inner img{
+  height: 75px;
+  width: 75px;
 }
 header .menu{
   position: absolute;
@@ -269,4 +272,44 @@ header .menu .item:hover a{
 .collection .inner .btn{
   margin: auto;
   width: 200px;
+}
+
+/* FOOTER */
+footer{
+  background-color: #1f1f1f;
+  color: rgb(222, 222, 222);
+}
+footer .inner{
+  height: 200px;
+  display: flex;
+}
+footer .inner img{
+    width: 75px;
+    height: 75px;
+    margin: auto 20px;
+}
+footer .inner .info{
+  margin: 20px;
+  font-size: 15px;
+}
+footer .inner span{
+  display: block;
+}
+footer .inner .info .location{
+  margin: 10px;
+}
+footer .inner .info .tel{
+  margin: 10px;
+}
+footer .inner .info .fax{
+  margin: 10px;
+}
+footer .inner .copyright{
+  width: 1000px;
+  margin: 10px auto 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  flex-grow: 1;
+  font-size: 15px;
 }
